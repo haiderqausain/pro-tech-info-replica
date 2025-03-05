@@ -1,0 +1,226 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #4e4ceb;
+  --accent: #0333e8;
+  --font-color: #1e2022;
+  --basic-black: #3c4043;
+  --button-color: #2250fc;
+  --footer-bgc: #f9f9fa;
+  --copyright-bgc: #f1f1f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 80px;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: var(--primary);
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background: peru;
+}
+
+.main-container .bar {
+  width: 100%;
+  background: var(--secondary);
+}
+.main-container .bar .logo {
+  position: relative;
+}
+.main-container .bar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+  top: 3px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+.main-container .bar .elements {
+  display: none;
+}
+.main-container .bar .tailored-head {
+  color: var(--primary);
+  margin-block-end: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+.main-container .bar .tailored-head h1 {
+  line-height: 2.5rem;
+  font-weight: 200;
+}
+.main-container .container {
+  background: var(--primary);
+}
+.main-container .container .second-heading h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.7px;
+  line-height: 50px;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 300;
+}
+.main-container .container .second-heading p {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--basic-black);
+  font-weight: 400;
+  line-height: 1.7;
+}
+.main-container .container .list .icon {
+  display: flex;
+  font-size: 1.5rem;
+  padding-inline-end: 2rem;
+  justify-content: center;
+  margin-block-end: 2rem;
+  text-align: center;
+}
+.main-container .container .list .icon .teacher {
+  position: relative;
+  left: 30px;
+}
+.main-container .container .list .paragraph p {
+  padding-inline-start: 4rem;
+  text-align: left;
+  padding-inline-end: 2rem;
+  line-height: 1.8;
+  margin-block-end: 5rem;
+  color: var(--basic-black);
+}
+.main-container .container .role-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .container .role-btn button {
+  font-size: 0.75rem;
+  background-color: var(--button-color);
+  color: var(--primary);
+  border: 1px solid var(--button-color);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
+  font-weight: 600;
+  margin-block-end: 6rem;
+  letter-spacing: 0.125rem;
+}
+.main-container .second-section .container h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-block-end: 0.8rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+}
+.main-container .second-section .container a {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  font-weight: 50;
+}
+.main-container .second-section .container .main-box {
+  margin-block-end: 8rem;
+}
+.main-container .second-section .container .main-box h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-block-end: 0.625rem;
+}
+.main-container .second-section .container .main-box p {
+  text-align: center;
+  color: var(--basic-black);
+  line-height: 1.625rem;
+  margin-block-end: 0.625rem;
+  padding: 1rem;
+}
+.main-container footer {
+  background: var(--footer-bgc);
+  margin-block-end: 3rem;
+}
+.main-container footer .footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.main-container footer .footer-box h6 {
+  font-size: 1rem;
+  padding: 2rem;
+  color: var(--basic-black);
+}
+.main-container footer .footer-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: 2rem;
+}
+.main-container footer .footer-box .contact-btn a {
+  font-size: 0.75rem;
+  background-color: var(--button-color);
+  color: var(--primary);
+  border: 1px solid var(--button-color);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
+  font-weight: 600;
+  margin-block-end: 6rem;
+  letter-spacing: 0.125rem;
+  margin-inline-start: 1.5rem;
+}
+.main-container footer .foot-head-box-2 {
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 5rem;
+}
+.main-container footer .foot-head-box-2 ul h6 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding: 2rem;
+}
+.main-container footer .foot-head-box-2 ul li a {
+  line-height: 1.8;
+  padding: 2rem;
+  color: var(--basic-black);
+  font-weight: 400;
+}
+.main-container .copyright-section .heading p {
+  text-align: center;
+  line-height: 2.5;
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+.section-about {
+  background: palegoldenrod;
+}
+
+.section-contact {
+  background: #ab0f0f;
+}/*# sourceMappingURL=style.css.map */

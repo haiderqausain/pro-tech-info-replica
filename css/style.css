@@ -34,33 +34,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
-  background: peru;
-}
-
-.main-container .bar {
+.hero-wrapper {
   width: 100%;
   background: var(--secondary);
 }
-.main-container .bar .logo {
-  position: relative;
-}
-.main-container .bar span {
+.hero-wrapper .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 75px;
-  top: 3px;
+  position: relative;
+  justify-content: center;
+  padding-block-end: 3rem;
+}
+.hero-wrapper span {
+  padding-inline-start: 0.1rem;
   font-size: 2rem;
   font-weight: 900;
   color: var(--primary);
 }
-.main-container .bar .elements {
-  display: none;
-}
-.main-container .bar .tailored-head {
+.hero-wrapper .tailored-head {
   color: var(--primary);
   margin-block-end: 5rem;
   display: flex;
@@ -68,159 +59,325 @@ nav {
   text-align: center;
   padding: 3rem;
 }
-.main-container .bar .tailored-head h1 {
+.hero-wrapper .tailored-head h1 {
   line-height: 2.5rem;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 1.625rem;
+  position: relative;
+  bottom: 2rem;
 }
-.main-container .container {
+
+.container {
   background: var(--primary);
 }
-.main-container .container .second-heading h2 {
-  font-size: 3rem;
+.container .second-heading h2 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
   letter-spacing: -0.7px;
   line-height: 50px;
   text-align: center;
-  padding: 1rem;
-  font-weight: 300;
+  font-weight: 500;
 }
-.main-container .container .second-heading p {
-  font-size: 1rem;
-  padding: 1rem;
+.container .second-heading p {
+  font-size: 0.9rem;
+  padding-inline: 1.5rem;
   text-align: center;
   color: var(--basic-black);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.7;
 }
-.main-container .container .list .icon {
+.container .list-container {
   display: flex;
-  font-size: 1.5rem;
-  padding-inline-end: 2rem;
-  justify-content: center;
-  margin-block-end: 2rem;
-  text-align: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 2rem;
 }
-.main-container .container .list .icon .teacher {
-  position: relative;
-  left: 30px;
+.container .list-container .item-card {
+  display: flex;
+  gap: 30px;
 }
-.main-container .container .list .paragraph p {
-  padding-inline-start: 4rem;
-  text-align: left;
-  padding-inline-end: 2rem;
-  line-height: 1.8;
-  margin-block-end: 5rem;
+.container .list-container .item-card .icon-section .fa {
+  font-size: 1.25rem;
+  border: 3px solid black;
+  border-radius: 60%;
+  padding: 0.5rem;
+}
+.container .list-container .item-card .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .list-container .item-card .text-box h4 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.container .list-container .item-card .text-box p {
+  line-height: 1.6;
   color: var(--basic-black);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
 }
-.main-container .container .role-btn {
+.container .role-btn {
+  margin-block-start: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.main-container .container .role-btn button {
+.container .role-btn button {
   font-size: 0.75rem;
   background-color: var(--button-color);
   color: var(--primary);
   border: 1px solid var(--button-color);
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 0.5rem 0.9rem 0.5rem 0.9rem;
   border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
   font-weight: 600;
-  margin-block-end: 6rem;
-  letter-spacing: 0.125rem;
+  margin-block-end: 7.5rem;
 }
-.main-container .second-section .container h3 {
+
+.second-section .container h3 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
-  margin-block-end: 0.8rem;
   line-height: 1.5;
-  padding: 1.2rem;
+  padding-block-end: 1.2rem;
 }
-.main-container .second-section .container a {
+.second-section .container a {
   font-size: 1rem;
-  margin-bottom: 16px;
+  margin-block-end: 1rem;
   color: var(--font-color);
   display: flex;
   justify-content: center;
-  font-weight: 50;
+  text-transform: none;
+  line-height: 1.7;
+  letter-spacing: 0;
+  font-weight: 0;
 }
-.main-container .second-section .container .main-box {
+.second-section .container .main-box {
   margin-block-end: 8rem;
 }
-.main-container .second-section .container .main-box h4 {
+.second-section .container .main-box h4 {
   font-size: 1.5rem;
   text-align: center;
-  margin-block-end: 0.625rem;
+  font-weight: 600;
+  padding: 0.625rem;
 }
-.main-container .second-section .container .main-box p {
+.second-section .container .main-box p {
   text-align: center;
   color: var(--basic-black);
   line-height: 1.625rem;
   margin-block-end: 0.625rem;
-  padding: 1rem;
+  padding-inline: 1.5rem;
+  font-weight: 200;
 }
-.main-container footer {
+
+footer {
   background: var(--footer-bgc);
-  margin-block-end: 3rem;
 }
-.main-container footer .footer-box {
+footer .footer-box {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
-.main-container footer .footer-box h6 {
-  font-size: 1rem;
+footer .footer-box h6 {
+  margin-block-start: 2rem;
   padding: 2rem;
   color: var(--basic-black);
+  font-size: 0.875rem;
+  letter-spacing: 0.063rem;
+  font-weight: 600;
 }
-.main-container footer .footer-box p {
+footer .footer-box p {
+  margin-block-start: -3rem;
   font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.8;
   padding: 2rem;
+  color: var(--basic-black);
+  margin-block-end: 1.5rem;
 }
-.main-container footer .footer-box .contact-btn a {
+footer .footer-box .contact-btn a {
   font-size: 0.75rem;
   background-color: var(--button-color);
   color: var(--primary);
   border: 1px solid var(--button-color);
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
   border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
   font-weight: 600;
   margin-block-end: 6rem;
-  letter-spacing: 0.125rem;
-  margin-inline-start: 1.5rem;
+  margin-inline-start: 2rem;
 }
-.main-container footer .foot-head-box-2 {
+footer .foot-head-box-two {
   display: flex;
   flex-direction: column;
   padding-block-end: 5rem;
 }
-.main-container footer .foot-head-box-2 ul h6 {
+footer .foot-head-box-two ul h6 {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--basic-black);
   padding: 2rem;
+  font-weight: 600;
 }
-.main-container footer .foot-head-box-2 ul li a {
+footer .foot-head-box-two ul li a {
   line-height: 1.8;
   padding: 2rem;
   color: var(--basic-black);
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1rem;
 }
-.main-container .copyright-section .heading p {
+
+.copyright-section {
+  background: var(--copyright-bgc);
+}
+.copyright-section .heading p {
   text-align: center;
   line-height: 2.5;
   font-size: 0.9rem;
-  padding: 1rem;
-  font-weight: 100;
+  font-weight: 300;
+  padding: 1.8rem;
 }
 
-.section-about {
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    align-items: start;
+  }
+  .nav .logo {
+    padding-inline: 2rem;
+  }
+  .nav .logo img {
+    width: 80px;
+  }
+  .nav .logo .main-head span {
+    font-size: 2rem;
+  }
+  .elements {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    bottom: 9rem;
+    padding: 3rem;
+  }
+  .elements a {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    line-height: normal;
+  }
+  .hero-wrapper .tailored-head {
+    padding-block: 5rem;
+  }
+  .hero-wrapper .tailored-head h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    position: relative;
+    bottom: 6rem;
+  }
+  .container .second-heading h2 {
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 60px;
+  }
+  .container .second-heading p {
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  .container .list-container {
+    margin-inline: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
+  }
+  .container .list-container .item-card {
+    margin: 0 0 1.2rem 5.25rem;
+  }
+  .container .list-container .item-card .text-box p {
+    font-size: 0.87rem;
+  }
+  .container .list-container .item-card .text-box h4 {
+    font-size: 1.2rem;
+  }
+  section.second-section .container h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-block-end: 3rem;
+  }
+  section.second-section .container a {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  section.second-section .container .main-box {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-inline-start: 8rem;
+  }
+  section.second-section .container .main-box p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--basic-black);
+  }
+  footer {
+    display: flex;
+    padding: 3.5rem;
+  }
+  footer .foot-head-box-two {
+    display: flex;
+  }
+  footer .display-list {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .display-list ul h6 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    padding: 2rem;
+    font-weight: 600;
+  }
+  footer .display-list ul li a {
+    line-height: 1.8;
+    padding: 2rem;
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  footer .social-media ul h6 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    padding: 2rem;
+    font-weight: 600;
+  }
+  footer .social-media ul li a {
+    line-height: 1.8;
+    padding: 2rem;
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .copyright-section .heading p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+about .section-about {
   background: palegoldenrod;
-}
-
-.section-contact {
-  background: #ab0f0f;
 }/*# sourceMappingURL=style.css.map */
